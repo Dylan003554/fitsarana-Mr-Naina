@@ -5,20 +5,125 @@
 <head>
     <title>Demandes</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
-        h1 { color: #333; }
-        table { border-collapse: collapse; width: 100%; margin-top: 20px; background: white; }
-        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-        th { background-color: #2196F3; color: white; }
-        tr:hover { background-color: #f1f1f1; }
-        form { background: white; padding: 20px; border-radius: 5px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        input[type="text"], input[type="date"], select { padding: 8px; margin: 5px; border: 1px solid #ddd; border-radius: 3px; }
-        input[type="submit"] { padding: 8px 20px; background: #2196F3; color: white; border: none; border-radius: 3px; cursor: pointer; }
-        input[type="submit"]:hover { background: #1976D2; }
-        a { color: #e74c3c; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .nav { margin-bottom: 20px; }
-        .nav a { color: #4CAF50; margin-right: 15px; font-weight: bold; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        /* TITRE */
+        h1 {
+            color: #f8fafc;
+            font-weight: 600;
+        }
+
+        /* NAVIGATION */
+        .nav {
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            color: #38bdf8;
+            margin-right: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            color: #0ea5e9;
+        }
+
+        /* FORMULAIRE */
+        form {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        label {
+            margin-right: 5px;
+        }
+
+        /* INPUTS + SELECT */
+        input[type="text"],
+        input[type="date"],
+        select {
+            padding: 8px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background: #334155;
+            color: white;
+        }
+
+        input:focus,
+        select:focus {
+            outline: 2px solid #38bdf8;
+        }
+
+        /* BOUTON */
+        input[type="submit"] {
+            padding: 8px 20px;
+            background: linear-gradient(135deg, #38bdf8, #6366f1);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        /* TABLE */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            background: #1e293b;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        /* HEADER */
+        th {
+            background: linear-gradient(135deg, #38bdf8, #6366f1);
+            color: white;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        /* LIGNES */
+        tr:nth-child(even) {
+            background: #0f172a;
+        }
+
+        tr:hover {
+            background: #334155;
+        }
+
+        /* LIENS */
+        a {
+            color: #f87171;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #ef4444;
+        }
     </style>
 </head>
 <body>
