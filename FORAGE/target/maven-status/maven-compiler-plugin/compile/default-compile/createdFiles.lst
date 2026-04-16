@@ -1,0 +1,15 @@
+com\example\forage\model\TypeDevis.class
+com\example\forage\repository\TypeDevisRepository.class
+com\example\forage\model\Client.class
+com\example\forage\model\Devis.class
+com\example\forage\repository\ClientRepository.class
+com\example\forage\model\DetailsDevis.class
+com\example\forage\service\DetailsDevisService.class
+com\example\forage\controller\DashboardController.class
+com\example\forage\repository\DevisRepository.class
+com\example\forage\repository\DemandeRepository.class
+com\example\forage\controller\BackOfficeController.class
+com\example\forage\service\TypeDevisService.class
+com\example\forage\model\Demande.class
+com\example\forage\ForageApplication.class
+com\example\forage\repository\DetailsDevisRepository.class
